@@ -44,6 +44,6 @@ public class MyPage {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.quit();
+		mobileDriver.quit();
 	}
 }
