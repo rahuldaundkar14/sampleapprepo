@@ -32,7 +32,7 @@ public class MyPage {
 		capabilities.setCapability("appActivity", "com.amazon.mShop.home.HomeActivity");
 		
 		try {
-			mobileDriver = new AndroidDriver<>(new URL("http://0.0.0.0:4723"), capabilities);
+			mobileDriver = new AndroidDriver<>(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
 		} catch (MalformedURLException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
