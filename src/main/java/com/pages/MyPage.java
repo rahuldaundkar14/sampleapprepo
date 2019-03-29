@@ -13,6 +13,8 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class MyPage {
 
+
+
 	WebDriver driver;
 	public static AppiumDriver<MobileElement> mobileDriver;
 	DesiredCapabilities capabilities;
