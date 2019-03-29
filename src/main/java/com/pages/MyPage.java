@@ -18,11 +18,11 @@ public class MyPage {
 	DesiredCapabilities capabilities;
 	
 	public void initilise() {
-		System.out.println("Initilising drivers...");
+		/*System.out.println("Initilising drivers...");
 		System.setProperty("webdriver.chrome.driver", "D:\\workspace\\jenekins\\com.seleniumjenekins\\driver\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("http://google.com");
-		/*capabilities = new DesiredCapabilities();
+		driver.get("http://google.com");*/
+		capabilities = new DesiredCapabilities();
 		capabilities.setCapability("deviceName", "android");
 		capabilities.setCapability("platformName", "android");
 		capabilities.setCapability("platformVersion", "11.3");
@@ -43,7 +43,7 @@ public class MyPage {
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}*/
-		driver.quit();
+		}
+		mobileDriver.quit();
 	}
 }
