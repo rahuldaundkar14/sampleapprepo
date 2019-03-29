@@ -19,7 +19,7 @@ public class MyPage {
 	
 	public void initilise() {
 		System.out.println("Initilising drivers...");
-		System.setProperty("webdriver.chrome.driver", "D:\\workspace\\jenekins\\com.seleniumjenekins\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\workspace\\jenekins\\com.seleniumjenekins\\driver\\chromedriver");
 		driver = new ChromeDriver();
 		driver.get("http://google.com");
 		/*capabilities = new DesiredCapabilities();
