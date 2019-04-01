@@ -21,10 +21,10 @@ public class MyPage {
 	public void initilise() {
 		System.out.println(System.getProperty("user.dir"));
 		System.out.println("Initilising drivers...");
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/driver/chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("http://google.com");
-		driver.quit();
+		//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/driver/chromedriver");
+		//driver = new ChromeDriver();
+		//driver.get("http://google.com");
+		//driver.quit();
 		/*capabilities = new DesiredCapabilities();
 		capabilities.setCapability("deviceName", "android");
 		capabilities.setCapability("platformName", "android");
