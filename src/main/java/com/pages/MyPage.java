@@ -30,6 +30,7 @@ ChromeOptions options = new ChromeOptions();
 
 		driver = new ChromeDriver(options);
 		driver.get("http://google.com");
+		System.out.println("Title;---" + driver.getTitle());
 		driver.quit();
 		/*capabilities = new DesiredCapabilities();
 		capabilities.setCapability("deviceName", "android");
