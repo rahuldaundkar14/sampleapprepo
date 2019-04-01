@@ -13,17 +13,18 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class MyPage {
 
-
-
 	WebDriver driver;
 	public static AppiumDriver<MobileElement> mobileDriver;
 	DesiredCapabilities capabilities;
 	
+	
 	public void initilise() {
+		System.out.println(System.getProperty("user.dir"));
 		System.out.println("Initilising drivers...");
-		System.setProperty("webdriver.chrome.driver", "D:\\workspace\\jenekins\\com.seleniumjenekins\\driver\\chromedriver");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\driver\\chromedriver_46");
 		driver = new ChromeDriver();
 		driver.get("http://google.com");
+		driver.quit();
 		/*capabilities = new DesiredCapabilities();
 		capabilities.setCapability("deviceName", "android");
 		capabilities.setCapability("platformName", "android");
@@ -39,13 +40,13 @@ public class MyPage {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
-		*/
+		
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.quit();
+		mobileDriver.quit();*/
 	}
 }
