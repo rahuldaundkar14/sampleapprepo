@@ -21,8 +21,7 @@ public class MyPage {
 	public void initilise() {
 		System.out.println(System.getProperty("user.dir"));
 		System.out.println("Initilising drivers...");
-		System.setProperty("webdriver.chrome.driver", "/home/ubuntu/sampleapprepo/driver/
-/driver/chromedriver_38");
+		System.setProperty("webdriver.chrome.driver", "/home/ubuntu/sampleapprepo/driver/chromedriver_38");
 
 ChromeOptions options = new ChromeOptions();
 
