@@ -19,7 +19,7 @@ public class MyPage {
 	
 	
 	public void initilise() {
-	/*	System.out.println(System.getProperty("user.dir"));
+		System.out.println(System.getProperty("user.dir"));
 		System.out.println("Initilising drivers...");
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/driver/chromedriver_40");
 
@@ -33,8 +33,8 @@ options.addArguments("--no-sandbox"); // Bypass OS security model
 
 		driver = new ChromeDriver(options);
 		driver.get("http://google.com");
-		driver.quit();*/
-		capabilities = new DesiredCapabilities();
+		driver.quit();
+		/*capabilities = new DesiredCapabilities();
 		capabilities.setCapability("deviceName", "android");
 		capabilities.setCapability("platformName", "android");
 		capabilities.setCapability("platformVersion", "11.3");
@@ -56,6 +56,6 @@ options.addArguments("--no-sandbox"); // Bypass OS security model
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		mobileDriver.quit();
+		mobileDriver.quit();*/
 	}
 }
