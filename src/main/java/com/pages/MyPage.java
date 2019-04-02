@@ -17,6 +17,7 @@ public class MyPage {
 	public static AppiumDriver<MobileElement> mobileDriver;
 	DesiredCapabilities capabilities;
 	
+
 	public void initilise() {
 		System.out.println(System.getProperty("user.dir"));
 		System.out.println("Initilising drivers...");
