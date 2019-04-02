@@ -17,14 +17,12 @@ public class MyPage {
 	public static AppiumDriver<MobileElement> mobileDriver;
 	DesiredCapabilities capabilities;
 	
-
 	public void initilise() {
 		System.out.println(System.getProperty("user.dir"));
 		System.out.println("Initilising drivers...");
 		System.setProperty("webdriver.chrome.driver", "/home/ubuntu/sampleapprepo/driver/chromedriver_38");
 
-ChromeOptions options = new ChromeOptions();
-
+	ChromeOptions options = new ChromeOptions();
         options.addArguments("headless");
         options.addArguments("window-size=1200x600");
 
